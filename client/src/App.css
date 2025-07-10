@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
+:root {
+  --primary-color: #018ABE;
+  --secondary-color: #93CBD8;
+  --background-color: #001A47;
+}
+
 body {
   margin: 0;
   font-family: 'Cairo', sans-serif;
   direction: rtl;
-  background: linear-gradient(to bottom, #67c8f2, #014b87);
 }
 
 .signup-screen,
@@ -16,17 +21,22 @@ body {
   height: 100vh;
   padding: 20px;
   color: white;
+  background: linear-gradient(to bottom, #93CBD8 0%, #018ABE 50%, #001A47 100%);
 }
 
 .logo-circle {
   background-color: white;
   border-radius: 50%;
-  padding: 24px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 104px;
+  height: 104px;
 }
 
 .logo-text {
-  color: #0077b6;
+  color: var(--primary-color);
   font-size: 24px;
   font-weight: bold;
 }
